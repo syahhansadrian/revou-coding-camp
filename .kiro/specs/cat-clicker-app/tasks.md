@@ -23,8 +23,8 @@
   - [x] 4.6 Implement `handleCatClick()` — increments `clickCount`, calls `updateCounter`, `selectReaction`, `showReaction`, `playClickAnimation`
   - [x] 4.7 Attach `handleCatClick` as click listener on the cat element
 
-- [-] 5. Write tests
-  - [-] 5.1 Write unit tests: cat element exists on load, reaction pool has ≥6 distinct entries, bounce class added on click, reaction animation class added on click, Tailwind CDN link present, no framework script tags
-  - [~] 5.2 Write property test for Property 1 (Counter-DOM Sync) using fast-check, min 100 runs
-  - [~] 5.3 Write property test for Property 2 (Reaction Always In Pool) using fast-check, min 100 runs
-  - [~] 5.4 Write property test for Property 3 (No Consecutive Duplicate Reactions) using fast-check, min 100 runs
+- [x] 5. Write tests
+  - [x] 5.1 Write unit tests: cat element exists on load, reaction pool has ≥6 distinct entries, bounce class added on click, reaction animation class added on click, Tailwind CDN link present, no framework script tags
+  - [x] 5.2 Write property test for Property 1 (Counter-DOM Sync) using fast-check, min 100 runs
+  - [x] 5.3 Write property test for Property 2 (Reaction Always In Pool) using fast-check, min 100 runs
+  - [x] 5.4 Write property test for Property 3 (No Consecutive Duplicate Reactions) using fast-check, min 100 runs

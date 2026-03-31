@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap');
+
+* { font-family: 'Nunito', sans-serif; }
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  min-height: 100vh;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+@keyframes catBounce {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  25%       { transform: scale(1.35) rotate(-5deg); }
+  75%       { transform: scale(1.35) rotate(5deg); }
+}
+.cat-bounce {
+  animation: catBounce 300ms ease;
+}
+
+@keyframes reactionFloat {
+  0%   { opacity: 0; transform: translateY(16px) scale(0.8); }
+  60%  { opacity: 1; transform: translateY(-4px) scale(1.1); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.reaction-float {
+  animation: reactionFloat 450ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(255,255,255,0.5); }
+  70%  { box-shadow: 0 0 0 20px rgba(255,255,255,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+}
+.cat-btn {
+  transition: transform 0.1s ease;
+}
+.cat-btn:active { transform: scale(0.92); }
+.cat-btn:hover {
+  animation: pulse-ring 1s ease infinite;
+}
+
+@keyframes countPop {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.2); }
+}
+.count-pop {
+  animation: countPop 200ms ease;
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.shimmer-text {
+  background: linear-gradient(90deg, #fff 25%, #ffd6ff 50%, #fff 75%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
